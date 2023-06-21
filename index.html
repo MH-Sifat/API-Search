@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search food</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+    }
+    
+    #nav{
+        padding: 20px;
+        background-color: skyblue;
+
+    }
+    .logo{
+        font: 30px bold;
+        color: white;
+    }
+    
+    </style>
+</head>
+<body>
+<!-- <nav id="nav-categories">
+    <a onclick="categories()" class="btn btn-outline-primary" type="submit">Search</a>
+
+</nav> -->
+<nav p-20>
+    <div id="nav">
+    <div><span class="logo">API</span></div>
+</div>
+</nav>
+<div class="w-50 my-5 mx-auto">
+    <div class="d-flex" role="search">
+      <input id="search-Field" class="form-control me-2" type="search" placeholder="Search Your Favourite food">
+      <button onclick="searchFood()" class="btn btn-outline-primary" type="submit">Search</button>
+    </div>
+</div>
+<!--Error-->
+<div>
+    <h5 id="error-massage" class="text-danger text-center">Something went wrong! please try again</h5>
+    <h5 id="error-item" class="text-danger text-center">Item not found please try with valid name</h5>
+    
+
+<!--details-->
+<div id="meal-details" class="w-50 mx-auto mb-5">
+
+</div>
+<!--All card-->
+<div id="search-result" class="container mx-auto row row-cols-1 row-cols-md-3 g-4">
+
+</div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
